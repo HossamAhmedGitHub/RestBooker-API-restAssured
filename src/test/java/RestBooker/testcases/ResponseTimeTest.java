@@ -26,7 +26,6 @@ public class ResponseTimeTest {
                         .statusCode(200)
                         .extract().response();
         authToken = responseData.path("token");
-        System.out.println("authToken===="+authToken);
     }//end getToken()
 
     @Test( description = "verify Response time is less than 200 ms when adding new booking")

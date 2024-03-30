@@ -25,7 +25,6 @@ public class UpdateBookingTest {
                 .statusCode(200)
                 .extract().response();
         authToken = responseData.path("token");
-        System.out.println("authToken===="+authToken);
     }
     @Test(description = "verify Update without authentication, error message 'Forbidden' is returned")
     public void TCRestfulBooker_03(){
